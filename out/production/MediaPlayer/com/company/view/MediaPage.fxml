@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="949.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.MediaPageController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+            <VBox alignment="BOTTOM_CENTER" prefWidth="950.0" StackPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <BorderPane opacity="0.78" prefHeight="57.0" prefWidth="950.0" style="-fx-background-color: #757575;">
+                     <left>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="playListPage" mnemonicParsing="false" prefHeight="56.0" prefWidth="44.0" style="-fx-background-color: transparont;">
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="41.0" fitWidth="41.0">
+                                       <image>
+                                          <Image url="@image/PlayList.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </HBox>
+                     </left>
+                     <center>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <children>
+                              <Button fx:id="chooseFile" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@image/Open%20File.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="previousBTN" layoutX="259.0" layoutY="26.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0" nodeOrientation="RIGHT_TO_LEFT">
+                                       <image>
+                                          <Image url="@image/Skip.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="back30BTN" layoutX="165.0" layoutY="17.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0" nodeOrientation="RIGHT_TO_LEFT">
+                                       <image>
+                                          <Image url="@image/Skip30.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="playBTN" layoutX="290.0" layoutY="17.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@image/play.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="pauseBTN" layoutX="261.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@image/pause.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="skip30BTN" layoutX="321.0" layoutY="17.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@image/Skip30.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="nextBTN" layoutX="352.0" layoutY="17.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@image/Skip.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="stopBTN" layoutX="259.0" layoutY="17.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@image/stop.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="loopBTN" layoutX="479.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: transparont;">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@image/loop.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </center>
+                     <right>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="volumePercent">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Slider fx:id="volumeSlider" />
+                           </children>
+                        </HBox>
+                     </right>
+                     <top>
+                        <VBox spacing="2.0">
+                           <children>
+                              <Slider fx:id="videoSlider" />
+                              <HBox prefHeight="0.0" prefWidth="950.0">
+                                 <children>
+                                    <Label fx:id="currentTime">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="totalTime" layoutX="25.0" layoutY="10.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="15.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </top>
+                  </BorderPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
