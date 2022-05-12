@@ -15,5 +15,17 @@ A simple meida player which wrote base on MVC ( Model, View and Controller ) arc
   - [X] Volume slidebar
   - [X] Loop
  ## Shortcut
- > Shortcuts :
-  1. Increasing Volume = 
+ > Shortcuts on keyboard :
+  1. Pause = PAUSE
+  2. Play = P
+  3. Stop = S
+  4. Skip 30 sec = RIGHT
+  5. Back 30 sec = LEFT
+  6. Increase volume = UP
+  7. Decreasing volume = DOWN
+ ## Features
+ > Features for this project :
+  1. Better UI
+  2. Subtitle
+  3. Mark
+  4. Editing Volume in Equalizer
